@@ -10,21 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <style>
         .fila1 {
+            /*Este apartado es el encabezado: Establece un ancho de 100% y añade margen debajo*/
             width: 100%;
             margin-bottom: 6%;
         }
         .fila234 {
+            /*Este apartado es todo el cuerpo: Habilitamos la opcion de flexibilidad y añadimos color de fondo*/
             display: flex;
             align-content: center;
             background-color: #faf7ed;
             flex-wrap: wrap;
         }
         .fila5 {
+            /*Este apartado es toda la zona negra: Habilitamos la opcion de flexibilidad, añadimos color de fondo y de fuente*/
             background-color: black;
             display: flex;
             color: white;
         }
         .apartado-arriba {
+            /*Este apartado es la primera linea del apartado en negro*/
             width: 100%;
             margin-top: 6%;
             margin-left: 6%;
@@ -32,12 +36,15 @@
             font-family: 'Lato', sans-serif;
         }
         .apartado-izq {
+            /*Este apartado equivale a todo el contenido del cuerpo situado a la izquierda*/
             width: 50%;
         }
         .apartado-der {
+            /*Este apartado equivale a todo el contenido del cuerpo situado a la izquierda*/
             width: 50%;
         }
         .apartado-abajo {
+            /*Este apartado equivale a los 4 contenedores del apartado negro: Aqui añadimos margenes y tamaños*/
             width: 25%;
             margin-top: 8%;
             margin-left: 6%;
@@ -45,30 +52,35 @@
             font-family: 'Lato', sans-serif;
             margin-bottom: 8%;
         }
-        body {
+        body { 
+            /*Este apartado equivale a todo el html*/
             width: 70%;
             margin-top: auto;
             margin-left: 15%;
         }
         .txt1-f1 {
+            /*Este apartado equivale al primer texto del encabezado*/
             margin-left: 6%;
             margin-top: 6%;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 22px;
         }
         .txt2-f1 {
+            /*Este apartado equivale al segundo texto del encabezado*/
             margin-left: 6%;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 60px;
             color: #039665;
         }
         .txt1-f234 {
+            /*Este apartado equivale al primer texto de los apartados con texto del cuerpo*/
             margin-left: 12%;
             margin-top: 12%;
             font-size: 30px;
             font-family: 'Lato', sans-serif;
         }
         .txt2-f234 {
+            /*Este apartado equivale al segundo texto de los apartados con texto del cuerpo*/
             margin-left: 12%;
             font-size: 52px;
             margin-right: 12%;
@@ -76,12 +88,14 @@
             color: gray;
         }
         .txt3-f234 {
+            /*Este apartado equivale al tercer texto de los apartados con texto del cuerpo*/
             margin-left: 12%;
             margin-bottom: 12%;
             font-family: 'Lato', sans-serif;
             font-size: 24px;
         }
         img {
+            /*Este apartado equivale a todas las imagenes: Aqui establecemos un margen y tamaño*/
             height: 65%;
             margin-left: 15%;
             border-radius: 10px;
@@ -89,19 +103,25 @@
         }
         @media screen and (max-width:768px){
             .fila234 {
+                /*Este apartado es todo el cuerpo: Habilitamos la opcion de flexibilidad*/
                 display: flex;
                 flex-wrap: wrap;
             }
             .apartado-izq {
+                /*Este apartado equivale a todo el contenido del cuerpo situado a la izquierda: Aqui establecemos un ancho de 100%
+                para que el resto del contenido de desplaze hacia abajo*/
                 width: 100%;
             }
             .apartado-der {
+                /*Este apartado equivale a todo el contenido del cuerpo situado a la derecha: Aqui establecemos un ancho de 100%
+                para que el resto del contenido de desplaze hacia abajo*/
                 width: 100%;
             }
             .fila1 {
                 flex-direction: row;
             }
             img {
+                /*Aqui estilizamos las imagenes para que se visualizen de manera correcta y ordenada*/
                 margin-left: 5%;
                 margin-right: 5%;
                 width: 90%;
@@ -110,38 +130,47 @@
                 margin-bottom: 10%;
             }
             .txt1-f234, .txt2-f234, .txt3-f234 {
+                /*Este apartado equivale a todos los textos del cuerpo y establece un margen*/
                 margin-left: 5%;
             }
             .txt1-f234 {
+                /*Establece tamaño de fuente*/
                 font-size: 24px;
             }
             .txt2-f234 {
+                /*Establece tamaño de fuente*/
                 font-size: 28px;
             }
             .txt3-f234 {
+                /*Establece tamaño de fuente*/
                 font-size: 18px;
             }
             .fila5 {
+                /*Este apartado es la parte en negro: Habilitamos la opcion de flexibilidad*/
                 display: flex;
                 flex-wrap: wrap; 
             }
             .apartado-abajo {
+                /*Aqui establecemos un ancho para que solo hayan 2 casillas por linea*/
                 width: 42%;
                 font-size: 9px;
             }
             .apartado-arriba {
+                /*Aqui establecemos una fuente*/
                 font-size: 18px;
             }
         }   
     </style>
 </head>
 <body>
+    <!--Este apartado es el encabezado-->
     <div class="fila1">
         <div class="apartado1-fil1">
             <h3 class="txt1-f1">Mobile Development</h3>
             <h1 class="txt2-f1">Grow your business with mobile apps</h1>
         </div>
     </div>
+    <!--Este apartado es todo el cuerpo-->
     <div class="fila234">
         <div class="apartado-izq">
             <h3 class="txt1-f234">Sleepiest</h3>
@@ -149,11 +178,14 @@
             <h4 class="txt3-f234">branding, design, mobile, product</h4>
         </div>
         <div class="apartado-der">
+            <!--Esto es la primera imagen-->
             <img type="png" src="img/section-1-m.png" alt="imagen-1">
         </div>
     </div>
+    <!--Este apartado es todo el cuerpo-->
     <div class="fila234">
         <div class="apartado-izq">
+            <!--Esto es la segunda imagen-->
             <img type="png" src="img/section-2-m.png" alt="imagen-2">
         </div>
         <div class="apartado-der">
@@ -162,6 +194,7 @@
             <h4 class="txt3-f234">web, mobile, product</h4>
         </div>
     </div>
+    <!--Este apartado es todo el cuerpo-->
     <div class="fila234">
         <div class="apartado-izq">
             <h3 class="txt1-f234">Genesis Vision</h3>
@@ -169,13 +202,16 @@
             <h4 class="txt3-f234">branding, design, experience, product</h4>
         </div>
         <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
             <img type="png" src="img/section-3-m.png" alt="imagen-3">
         </div>
     </div>
+    <!--Este apartado es el apartado de negro-->
     <div class="fila5">
         <div class="apartado-arriba"><strong>Have and idea? Tell us about it</strong></div>
     </div>
     <div class="fila5">
+        <!--Esto es la primera celda-->
         <div class="apartado-abajo">
             <h4 class="txtabajo"><strong>Product</strong></h4>
             <h4 class="txtabajo">Features</h4>
@@ -183,6 +219,7 @@
             <h4 class="txtabajo">Enterprise</h4>
             <h4 class="txtabajo">Customer stories</h4>
         </div>
+        <!--Esto es la segunda celda-->
         <div class="apartado-abajo">
             <h4 class="txtabajo"><strong>Platform</strong></h4>
             <h4 class="txtabajo">Developer API</h4>
@@ -190,6 +227,7 @@
             <h4 class="txtabajo">Atom</h4>
             <h4 class="txtabajo">Electron</h4>
         </div>
+        <!--Esto es la tercera celda-->
         <div class="apartado-abajo"> 
             <h4 class="txtabajo"><strong>Support</strong></h4>
             <h4 class="txtabajo">Help</h4>
@@ -197,6 +235,7 @@
             <h4 class="txtabajo">Learining Lab</h4>
             <h4 class="txtabajo">Certifications</h4>
         </div>
+        <!--Esto es la cuarta celda-->
         <div class="apartado-abajo">
             <h4 class="txtabajo"><strong>Company</strong></h4>
             <h4 class="txtabajo">About</h4>
